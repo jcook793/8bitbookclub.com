@@ -1,0 +1,54 @@
+<rss version="2.0">
+    <channel>
+        <atom:link href="https://feeds.megaphone.fm/watergate" rel="self" type="application/rss+xml"/>
+        <title>8-bit Book Club</title>
+        <link>https://www.8bitbookclub.com</link>
+        <language>en</language>
+        <copyright>Creative Commons</copyright>
+        <description>Each season we read a vintage programming book and discuss it as we go. Read along with us! Or just listen in as we learn things we should have learned 30 years ago.</description>
+        <image>
+            <url>https://www.8bitbookclub.com/podcast/logo.jpg</url>
+            <title>8-bit Book Club</title>
+            <link>https://www.8bitbookclub.com</link>
+        </image>
+        <itunes:type>serial</itunes:type>
+        <itunes:subtitle>Catching up with 1980's programming, one book at a time</itunes:subtitle>
+        <itunes:author>8-bit Book Club</itunes:author>
+        <itunes:summary>Each season we read a vintage programming book and discuss it as we go. Read along with us! Or just listen in as we learn things we should have learned 30 years ago. Season 1 of 8-bit Book Club is all about the Commodore 64 Programmer's Reference Guide.</itunes:summary>
+        <itunes:owner>
+            <itunes:name/>
+            <itunes:email>john@retronerd.com</itunes:email>
+        </itunes:owner>
+        <itunes:image href="https://www.8bitbookclub.com/podcast/logo.jpg"/>
+        <itunes:category text="Arts">
+            <itunes:category text="Literature"/>
+        </itunes:category>
+        <itunes:category text="Games & Hobbies">
+            <itunes:category text="Hobbies"/>
+        </itunes:category>
+        <itunes:category text="Technology"></itunes:category>
+
+        {% for season in seaons %}
+
+        <item>
+            <title>S1 Ep. 1: Title</title>
+            <itunes:title>Title without season or episode number</itunes:title>
+            <description>Description</description>
+            <pubDate>Wed, 10 Oct 2018 08:00:00 -0000</pubDate>
+            <itunes:author>8-bit Book Club</itunes:author>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>1</itunes:episode>
+            <itunes:subtitle>Subtitle</itunes:subtitle>
+            <itunes:summary>Summary</itunes:summary>
+            <itunes:duration>3408</itunes:duration>
+            <guid isPermaLink="false">GUID</guid>
+            <enclosure url="URL" length="130354155" type="audio/mpeg"/>
+        </item>
+
+
+
+        {% endfor %}
+
+    </channel>
+</rss>
